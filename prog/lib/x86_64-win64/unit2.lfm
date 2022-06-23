@@ -1,0 +1,105 @@
+object fEdit: TfEdit
+  Left = 1337
+  Height = 421
+  Top = 251
+  Width = 548
+  BorderStyle = bsDialog
+  Caption = 'Добавить'
+  ClientHeight = 421
+  ClientWidth = 548
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.0.4'
+  object Label1: TLabel
+    Left = 18
+    Height = 15
+    Top = 24
+    Width = 138
+    Caption = 'Наименование учебника'
+  end
+  object nname: TEdit
+    Left = 18
+    Height = 23
+    Top = 48
+    Width = 125
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 18
+    Height = 15
+    Top = 80
+    Width = 93
+    Caption = 'Год издательства'
+  end
+  object godiz: TEdit
+    Left = 18
+    Height = 23
+    Top = 104
+    Width = 198
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 18
+    Height = 15
+    Top = 136
+    Width = 33
+    Caption = 'Автор'
+  end
+  object bSave: TBitBtn
+    Left = 160
+    Height = 30
+    Top = 344
+    Width = 78
+    Caption = 'Добавить'
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = bSaveClick
+    TabOrder = 2
+  end
+  object bCancel: TBitBtn
+    Left = 248
+    Height = 30
+    Top = 344
+    Width = 75
+    DefaultCaption = True
+    Kind = bkCancel
+    OnClick = bCancelClick
+    TabOrder = 3
+  end
+  object avtor: TEdit
+    Left = 18
+    Height = 23
+    Top = 160
+    Width = 200
+    TabOrder = 4
+  end
+  object price: TEdit
+    Left = 18
+    Height = 23
+    Top = 224
+    Width = 120
+    TabOrder = 5
+  end
+  object pprice: TLabel
+    Left = 18
+    Height = 15
+    Top = 200
+    Width = 28
+    Caption = 'Цена'
+  end
+  object Label4: TLabel
+    Left = 18
+    Height = 15
+    Top = 264
+    Width = 65
+    Caption = 'Количество'
+  end
+  object kolvo: TEdit
+    Left = 18
+    Height = 23
+    Top = 296
+    Width = 80
+    TabOrder = 6
+  end
+end

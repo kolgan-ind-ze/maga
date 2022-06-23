@@ -1,0 +1,57 @@
+object fMain: TfMain
+  Left = 170
+  Height = 302
+  Top = 502
+  Width = 787
+  Caption = 'Список учебников'
+  ClientHeight = 302
+  ClientWidth = 787
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.2.0.4'
+  object SG: TStringGrid
+    Left = 0
+    Height = 278
+    Top = 24
+    Width = 787
+    Align = alClient
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 0
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 24
+    Top = 0
+    Width = 787
+    Align = alTop
+    ClientHeight = 24
+    ClientWidth = 787
+    TabOrder = 1
+    object bAdd: TSpeedButton
+      Left = 8
+      Height = 22
+      Top = 0
+      Width = 72
+      Caption = 'Добавить'
+      OnClick = bAddClick
+    end
+    object bDel: TSpeedButton
+      Left = 208
+      Height = 22
+      Top = 0
+      Width = 72
+      Caption = 'Удалить'
+      OnClick = bDelClick
+    end
+    object bEdit: TSpeedButton
+      Left = 96
+      Height = 22
+      Top = 0
+      Width = 96
+      Caption = 'Редактировать '
+      OnClick = bEditClick
+      OnDblClick = bEditClick
+    end
+  end
+end
